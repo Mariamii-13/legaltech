@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"c:\\\\Users\\\\Ggstore\\\\OneDrive\\\\Desktop\\\\legaltech\" && echo \"# legaltech\" >> README.md)",
+      "Bash(git init *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(mkdir -p \"c:\\\\Users\\\\Ggstore\\\\OneDrive\\\\Desktop\\\\legaltech\\\\docs\\\\superpowers\\\\plans\")",
+      "Bash(npm --version)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias=\"@/*\" --yes)",
+      "Bash(del README.md)",
+      "Bash(Remove-Item \"c:\\\\Users\\\\Ggstore\\\\OneDrive\\\\Desktop\\\\legaltech\\\\README.md\" -Force)",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\Ggstore\\\\OneDrive\\\\Desktop\\\\legaltech\\\\app\\\\pricing\")",
+      "PowerShell(Start-Sleep -Seconds 2; try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 10; Write-Host \"/ status: $\\($r.StatusCode\\) len:$\\($r.Content.Length\\)\" } catch { Write-Host \"Error: $_\" })",
+      "PowerShell(Rename-Item \"c:\\\\Users\\\\Ggstore\\\\OneDrive\\\\Desktop\\\\legaltech\\\\app\\\\pricing\\\\page.tsx\" \"page.tsx.bak\" -Force)",
+      "PowerShell(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force)",
+      "PowerShell(Rename-Item \"c:\\\\Users\\\\Ggstore\\\\OneDrive\\\\Desktop\\\\legaltech\\\\app\\\\\\(marketing\\)\\\\page.tsx\" \"page.tsx.bak\" -Force)",
+      "PowerShell(Start-Sleep -Seconds 2; try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 20; Write-Host \"/ => $\\($r.StatusCode\\)\" } catch { Write-Host \"Err: $_\" })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/wizard/1\" -UseBasicParsing -TimeoutSec 15; Write-Host \"/wizard/1 => $\\($r.StatusCode\\)\" } catch { Write-Host \"/wizard/1 => ERR: $\\($_.Exception.Message\\)\" })"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Ggstore\\OneDrive\\Desktop\\legaltech",
+      "c:\\Users\\Ggstore\\OneDrive\\Desktop\\legaltech\\docs\\superpowers"
+    ]
+  }
+}

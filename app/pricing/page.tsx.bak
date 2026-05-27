@@ -1,0 +1,3 @@
+// This file intentionally empty - route handled by app/(marketing)/pricing/page.tsx
+import { notFound } from 'next/navigation';
+export default function PricingRedirect() { notFound(); }
