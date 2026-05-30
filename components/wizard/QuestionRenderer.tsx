@@ -43,7 +43,7 @@ export function QuestionRenderer({ question, value, onChange, lang }: Props) {
       )}
 
       {question.type === 'select' && (
-        <Select value={value as string} onValueChange={onChange}>
+        <Select value={value as string} onValueChange={(val) => onChange(val ?? '')}>
           <SelectTrigger className="h-11">
             <SelectValue placeholder="Select an option..." />
           </SelectTrigger>
